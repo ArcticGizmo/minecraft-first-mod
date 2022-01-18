@@ -11,12 +11,12 @@ import com.arctigizmo.somanythings.util.RegistryHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("smt")
+@Mod("somanythings")
 public class SoManyThings {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final String MOD_ID = "smt";
+    public static final String MOD_ID = "somanythings";
 
     public SoManyThings() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
