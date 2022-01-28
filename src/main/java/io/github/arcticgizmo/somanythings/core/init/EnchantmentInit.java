@@ -1,5 +1,5 @@
 package io.github.arcticgizmo.somanythings.core.init;
 
-public class EntityTypeInit {
+public class EnchantmentInit {
   
 }
