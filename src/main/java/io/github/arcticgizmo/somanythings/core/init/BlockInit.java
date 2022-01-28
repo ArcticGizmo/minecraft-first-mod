@@ -1,6 +1,7 @@
 package io.github.arcticgizmo.somanythings.core.init;
 
 import io.github.arcticgizmo.somanythings.SoManyThings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -16,8 +17,7 @@ public class BlockInit {
       SoManyThings.MOD_ID);
 
   public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block",
-      () -> new Block(Block.Properties
-          .create(Material.IRON, MaterialColor.BLUE)
+      () -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.BLUE)
           .hardnessAndResistance(15f, 30f)
           .harvestTool(ToolType.PICKAXE)
           .harvestLevel(1)

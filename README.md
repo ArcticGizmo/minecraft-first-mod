@@ -5,3 +5,7 @@ gradlew genVSCoderuns
 
 ## Run
 gradlew runClient
+
+or just
+
+gradlew eclipse
