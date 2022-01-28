@@ -1,19 +1,15 @@
 modLoader="javafml" #mandatory
 
-loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 
-issueTrackerURL="http://my.issue.tracker/" #optional
+license="All rights reserved"
 
 [[mods]] #mandatory
 modId="somanythings" #mandatory
 
-version="1.15.2-0.0.1" #mandatory
+version="1.16.4-0.0.0" #mandatory
 
 displayName="So Many Things" #mandatory
-
-updateJSONURL="http://myurl.me/" #optional
-
-displayURL="http://example.com/" #optional
 
 logoFile="examplemod.png" #optional
 
@@ -22,19 +18,5 @@ credits="Thanks for this example mod goes to Java" #optional
 authors="Love, Cheese and small house plants" #optional
 
 description='''
-An Example description
+A bunch of things as I learn how to mod
 '''
-
-[[dependencies.examplemod]] #optional
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="[31,)" #mandatory
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.examplemod]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.15.2]"
-    ordering="NONE"
-    side="BOTH"
