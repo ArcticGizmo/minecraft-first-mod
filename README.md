@@ -3,9 +3,7 @@
 ## Setup
 gradlew genVSCoderuns
 
+gradlew eclipse
+
 ## Run
 gradlew runClient
-
-or just
-
-gradlew eclipse
