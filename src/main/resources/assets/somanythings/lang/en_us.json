@@ -5,5 +5,6 @@
   "block.somanythings.example_block": "Block of Example",
   "tooltip.somanythings.special_item.without_shift": "Hold \u00A7eShift\u00A77 for More Information",
   "tooltip.somanythings.special_item.with_shift": "Here is some extra information",
-  "block.somanythings.custom_block": "Custom Block"
+  "block.somanythings.custom_block": "Custom Block",
+  "item.somanythings.example_food": "Example Food"
 }

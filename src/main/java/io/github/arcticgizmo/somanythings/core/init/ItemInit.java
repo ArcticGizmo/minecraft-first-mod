@@ -19,6 +19,11 @@ public class ItemInit {
   public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item",
       () -> new SpecialItem(new Item.Properties().group(SoManyThings.TAB)));
 
+  public static final RegistryObject<Item> EXAMPLE_FOOD = ITEMS.register("example_food",
+      () -> new Item(new Item.Properties()
+          .group(SoManyThings.TAB)
+          .food(FoodInit.EXAMPLE_FOOD)));
+
   // Block Items
   public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
       () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), new Item.Properties().group(SoManyThings.TAB)));
