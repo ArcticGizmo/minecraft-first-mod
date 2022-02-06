@@ -23,4 +23,7 @@ public class ItemInit {
   // Block Items
   public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
       () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+
+  public static final RegistryObject<BlockItem> CUSTOM_BLOCK = ITEMS.register("custom_block",
+      () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
 }

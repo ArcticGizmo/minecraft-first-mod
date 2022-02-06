@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "somanythings:block/custom_block" },
+    "facing=east": { "model": "somanythings:block/custom_block", "y": 90 },
+    "facing=south": { "model": "somanythings:block/custom_block", "y": 180 },
+    "facing=west": { "model": "somanythings:block/custom_block", "y": 270 }
+  }
+}
