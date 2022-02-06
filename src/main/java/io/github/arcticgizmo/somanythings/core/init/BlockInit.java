@@ -4,6 +4,7 @@ import io.github.arcticgizmo.somanythings.SoManyThings;
 import io.github.arcticgizmo.somanythings.common.blocks.CustomBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -33,4 +34,7 @@ public class BlockInit {
           .harvestLevel(1)
           .sound(SoundType.WOOD)
           .setRequiresTool()));
+
+  public static final RegistryObject<Block> EXAMPLE_ORE = BLOCKS.register("example_ore",
+      () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
 }
