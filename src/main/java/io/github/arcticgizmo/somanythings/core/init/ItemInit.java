@@ -18,18 +18,18 @@ public class ItemInit {
   // public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item",
   // () -> new SpecialItem(new Item.Properties().tab(SoManyThings.TAB)));
 
-  // public static final RegistryObject<Item> EXAMPLE_FOOD = ITEMS.register("example_food",
-  // () -> new Item(new Item.Properties()
-  // .tab(SoManyThings.TAB)
-  // .food(FoodInit.EXAMPLE_FOOD)));
+  public static final RegistryObject<Item> EXAMPLE_FOOD = ITEMS.register("example_food",
+      () -> new Item(new Item.Properties()
+          .tab(SoManyThings.TAB)
+          .food(FoodInit.EXAMPLE_FOOD)));
 
   // Block Items
   public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
       () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
 
   // public static final RegistryObject<BlockItem> CUSTOM_BLOCK = ITEMS.register("custom_block",
-  //     () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
+  // () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
 
   // public static final RegistryObject<BlockItem> EXAMPLE_ORE = ITEMS.register("example_ore",
-  //     () -> new BlockItem(BlockInit.EXAMPLE_ORE.get(), new Item.Properties().tab(SoManyThings.TAB)));
+  // () -> new BlockItem(BlockInit.EXAMPLE_ORE.get(), new Item.Properties().tab(SoManyThings.TAB)));
 }
