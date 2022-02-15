@@ -5,7 +5,7 @@
       "item": "somanythings:example_item"
     }
   ],
-  "result": "somanythings:example_food",
+  "result": "somanythings:example_item",
   "experience": 0.5,
   "cookingtime": 20
 }

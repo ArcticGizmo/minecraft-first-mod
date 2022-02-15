@@ -2,14 +2,13 @@ package io.github.arcticgizmo.somanythings.core.init;
 
 import io.github.arcticgizmo.somanythings.SoManyThings;
 import io.github.arcticgizmo.somanythings.common.blocks.CustomBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraftforge.common.ToolType;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -19,22 +18,22 @@ public class BlockInit {
       SoManyThings.MOD_ID);
 
   public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block",
-      () -> new Block(AbstractBlock.Properties
-          .create(Material.IRON, MaterialColor.BLUE)
-          .hardnessAndResistance(15f, 30f)
-          .harvestTool(ToolType.PICKAXE)
-          .harvestLevel(1)
+      () -> new Block(BlockBehaviour.Properties
+          .of(Material.METAL, MaterialColor.COLOR_BLUE)
+          .strength(15f, 30f)
+          // .harvestTool(ToolType.PICKAXE)
+          // .harvestLevel(1)
           .sound(SoundType.METAL)
-          .setRequiresTool()));
+          .requiresCorrectToolForDrops()));
 
-  public static final RegistryObject<CustomBlock> CUSTOM_BLOCK = BLOCKS.register("custom_block",
-      () -> new CustomBlock(AbstractBlock.Properties
-          .create(Material.WOOD)
-          .harvestTool(ToolType.AXE)
-          .harvestLevel(1)
-          .sound(SoundType.WOOD)
-          .setRequiresTool()));
+  // public static final RegistryObject<CustomBlock> CUSTOM_BLOCK = BLOCKS.register("custom_block",
+  //     () -> new CustomBlock(BlockBehaviour.Properties
+  //         .of(Material.WOOD)
+  //         // .harvestTool(ToolType.AXE)
+  //         // .harvestLevel(1)
+  //         .sound(SoundType.WOOD)
+  //         .requiresCorrectToolForDrops()));
 
-  public static final RegistryObject<Block> EXAMPLE_ORE = BLOCKS.register("example_ore",
-      () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
+  // public static final RegistryObject<Block> EXAMPLE_ORE = BLOCKS.register("example_ore",
+  //     () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 }
