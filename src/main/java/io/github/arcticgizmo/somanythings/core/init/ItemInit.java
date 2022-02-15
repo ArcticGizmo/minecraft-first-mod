@@ -1,6 +1,7 @@
 package io.github.arcticgizmo.somanythings.core.init;
 
 import io.github.arcticgizmo.somanythings.SoManyThings;
+import io.github.arcticgizmo.somanythings.common.items.SpecialItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,8 +16,8 @@ public class ItemInit {
   public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
       () -> new Item(new Item.Properties().tab(SoManyThings.TAB)));
 
-  // public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item",
-  // () -> new SpecialItem(new Item.Properties().tab(SoManyThings.TAB)));
+  public static final RegistryObject<SpecialItem> SPECIAL_ITEM = ITEMS.register("special_item",
+      () -> new SpecialItem(new Item.Properties().tab(SoManyThings.TAB)));
 
   public static final RegistryObject<Item> EXAMPLE_FOOD = ITEMS.register("example_food",
       () -> new Item(new Item.Properties()
