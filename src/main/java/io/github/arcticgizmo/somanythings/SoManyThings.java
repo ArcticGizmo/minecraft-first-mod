@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import io.github.arcticgizmo.somanythings.common.Tab;
 import io.github.arcticgizmo.somanythings.core.init.BlockInit;
+import io.github.arcticgizmo.somanythings.core.init.EntityInit;
 import io.github.arcticgizmo.somanythings.core.init.ItemInit;
 
 @Mod(SoManyThings.MOD_ID)
@@ -26,6 +27,7 @@ public class SoManyThings {
 
     ItemInit.ITEMS.register(bus);
     BlockInit.BLOCKS.register(bus);
+    EntityInit.ENTITIES.register(bus);
 
     // MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGen::generateOres);
 

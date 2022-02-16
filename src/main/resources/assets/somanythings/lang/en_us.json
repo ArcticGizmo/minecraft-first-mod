@@ -7,5 +7,6 @@
   "tooltip.somanythings.special_item.with_shift": "Here is some extra information",
   "block.somanythings.custom_block": "Custom Block",
   "block.somanythings.example_ore": "Example Ore",
-  "item.somanythings.example_food": "Example Food"
+  "item.somanythings.example_food": "Example Food",
+  "entity.somanythings.example_entity": "Example Entity"
 }
