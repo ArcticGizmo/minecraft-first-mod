@@ -13,6 +13,7 @@ import io.github.arcticgizmo.somanythings.common.Tab;
 import io.github.arcticgizmo.somanythings.core.init.BlockInit;
 import io.github.arcticgizmo.somanythings.core.init.EntityInit;
 import io.github.arcticgizmo.somanythings.core.init.ItemInit;
+import io.github.arcticgizmo.somanythings.core.init.SoundInit;
 
 @Mod(SoManyThings.MOD_ID)
 public class SoManyThings {
@@ -25,10 +26,10 @@ public class SoManyThings {
     IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     bus.addListener(this::setup);
 
+    SoundInit.SOUNDS.register(bus);
     ItemInit.ITEMS.register(bus);
     BlockInit.BLOCKS.register(bus);
     EntityInit.ENTITIES.register(bus);
-
     // MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGen::generateOres);
 
     MinecraftForge.EVENT_BUS.register(this);

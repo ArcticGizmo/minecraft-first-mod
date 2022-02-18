@@ -1,8 +1,13 @@
 package io.github.arcticgizmo.somanythings.common.entity;
 
+import io.github.arcticgizmo.somanythings.SoManyThings;
 import io.github.arcticgizmo.somanythings.core.init.EntityInit;
 import io.github.arcticgizmo.somanythings.core.init.ItemInit;
+import io.github.arcticgizmo.somanythings.core.init.SoundInit;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -22,6 +27,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 
 public class ExampleEntity extends Animal {
+
+  private static final ResourceLocation LOOT_TABLE = new ResourceLocation(SoManyThings.MOD_ID,
+      "entities/example_entity");
 
   public ExampleEntity(EntityType<ExampleEntity> entityType, Level level) {
     super(entityType, level);
@@ -48,7 +56,26 @@ public class ExampleEntity extends Animal {
 
   public static AttributeSupplier.Builder createAttributes() {
     return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.MOVEMENT_SPEED, 0.2D);
+  }
 
+  @Override
+  protected SoundEvent getAmbientSound() {
+    return SoundInit.EXAMPLE_ENTITY_AMBIENT.get();
+  }
+
+  @Override
+  protected SoundEvent getHurtSound(DamageSource source) {
+    return SoundInit.EXAMPLE_ENTITY_HURT.get();
+  }
+
+  @Override
+  protected SoundEvent getDeathSound() {
+    return SoundInit.EXAMPLE_ENTITY_DEATH.get();
+  }
+
+  @Override
+  protected ResourceLocation getDefaultLootTable() {
+    return LOOT_TABLE;
   }
 
 }

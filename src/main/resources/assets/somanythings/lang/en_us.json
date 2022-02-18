@@ -8,5 +8,6 @@
   "block.somanythings.custom_block": "Custom Block",
   "block.somanythings.example_ore": "Example Ore",
   "item.somanythings.example_food": "Example Food",
-  "entity.somanythings.example_entity": "Example Entity"
+  "entity.somanythings.example_entity": "Example Entity",
+  "item.somanythings.example_entity_spawn_egg": "Spawn Example Entity"
 }

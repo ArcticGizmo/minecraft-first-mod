@@ -1,0 +1,17 @@
+{
+  "entity.example_entity.sound.ambient" : {
+    "sounds": [
+      "somanythings:example_entity_ambient"
+    ]
+  },
+  "entity.example_entity.sound.hurt": {
+    "sounds": [
+      "somanythings:example_entity_hurt"
+    ]
+  },
+   "entity.example_entity.sound.death": {
+    "sounds": [
+      "somanythings:example_entity_death"
+    ]
+   }
+}

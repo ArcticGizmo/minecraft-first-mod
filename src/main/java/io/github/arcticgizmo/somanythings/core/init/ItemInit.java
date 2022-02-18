@@ -4,6 +4,7 @@ import io.github.arcticgizmo.somanythings.SoManyThings;
 import io.github.arcticgizmo.somanythings.common.items.SpecialItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -23,6 +24,12 @@ public class ItemInit {
       () -> new Item(new Item.Properties()
           .tab(SoManyThings.TAB)
           .food(FoodInit.EXAMPLE_FOOD)));
+
+  public static final RegistryObject<ForgeSpawnEggItem> EXAMPLE_ENTITY_SPAWN_EGG = ITEMS
+      .register("example_entity_spawn_egg", () -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0x1E51ED, 0x34BD27,
+          new Item.Properties()
+              .tab(SoManyThings.TAB)
+              .stacksTo(16)));
 
   // Block Items
   public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
