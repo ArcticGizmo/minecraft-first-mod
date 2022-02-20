@@ -35,9 +35,7 @@ public class ItemInit {
   public static final RegistryObject<BlockItem> EXAMPLE_BLOCK = ITEMS.register("example_block",
       () -> new BlockItem(BlockInit.EXAMPLE_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
 
-  // public static final RegistryObject<BlockItem> CUSTOM_BLOCK = ITEMS.register("custom_block",
-  // () -> new BlockItem(BlockInit.CUSTOM_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
+  public static final RegistryObject<BlockItem> PIG_SUMMONER_BLOCK = ITEMS.register("pig_summoner_block",
+      () -> new BlockItem(BlockInit.PIG_SUMMONER_BLOCK.get(), new Item.Properties().tab(SoManyThings.TAB)));
 
-  // public static final RegistryObject<BlockItem> EXAMPLE_ORE = ITEMS.register("example_ore",
-  // () -> new BlockItem(BlockInit.EXAMPLE_ORE.get(), new Item.Properties().tab(SoManyThings.TAB)));
 }

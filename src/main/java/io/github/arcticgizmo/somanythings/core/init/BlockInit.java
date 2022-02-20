@@ -1,6 +1,7 @@
 package io.github.arcticgizmo.somanythings.core.init;
 
 import io.github.arcticgizmo.somanythings.SoManyThings;
+import io.github.arcticgizmo.somanythings.common.blocks.PigSummonerBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,14 +23,10 @@ public class BlockInit {
           .sound(SoundType.METAL)
           .requiresCorrectToolForDrops()));
 
-  // public static final RegistryObject<CustomBlock> CUSTOM_BLOCK = BLOCKS.register("custom_block",
-  // () -> new CustomBlock(BlockBehaviour.Properties
-  // .of(Material.WOOD)
-  // // .harvestTool(ToolType.AXE)
-  // // .harvestLevel(1)
-  // .sound(SoundType.WOOD)
-  // .requiresCorrectToolForDrops()));
-
-  // public static final RegistryObject<Block> EXAMPLE_ORE = BLOCKS.register("example_ore",
-  // () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+  public static final RegistryObject<PigSummonerBlock> PIG_SUMMONER_BLOCK = BLOCKS
+      .register("pig_summoner_block", () -> new PigSummonerBlock(BlockBehaviour.Properties
+          .of(Material.METAL, MaterialColor.TERRACOTTA_ORANGE)
+          .strength(28f, 30f)
+          .sound(SoundType.METAL)
+          .requiresCorrectToolForDrops()));
 }

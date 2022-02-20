@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "facing=north": { "model": "somanythings:block/pig_summoner_block" },
+    "facing=south": {
+      "model": "somanythings:block/pig_summoner_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "somanythings:block/pig_summoner_block",
+      "y": 270
+    },
+    "facing=east": { "model": "somanythings:block/pig_summoner_block", "y": 90 }
+  }
+}
